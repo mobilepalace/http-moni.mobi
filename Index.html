@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moni Mobile Palace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans Bengali', sans-serif;
+      margin: 0;
+      background: #f4f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #009688, #00796B);
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00796B;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      padding: 15px;
+      width: 280px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      background: #009688;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #00796B;
+    }
+
+    footer {
+      text-align: center;
+      background: #e0f2f1;
+      padding: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product {
+        width: 90%;
+      }
+
+      form {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Moni Mobile Palace & Servicing Center</h1>
+  <p>Prince Plaza, Madaripur Bazar, Tanore, Rajshahi</p>
+</header>
+
+<section>
+  <h2>আমাদের পণ্য</h2>
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150?text=Walton+GH10" alt="Walton Primo GH10">
+      <h3>Walton Primo GH10</h3>
+      <p>দাম: ৬,৯৯০৳</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150?text=Symphony+i85" alt="Symphony i85">
+      <h3>Symphony i85</h3>
+      <p>দাম: ৭,৪৯০৳</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150?text=Redmi+A2" alt="Redmi A2">
+      <h3>Redmi A2</h3>
+      <p>দাম: ৯,৯৯০৳</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>অর্ডার করুন</h2>
+  <form>
+    <input type="text" placeholder="আপনার নাম" required>
+    <input type="tel" placeholder="মোবাইল নম্বর" required>
+    <textarea placeholder="ঠিকানা লিখুন" rows="3" required></textarea>
+    <input type="text" placeholder="যে পণ্য অর্ডার করতে চান" required>
+    <button type="submit">অর্ডার করুন</button>
+  </form>
+</section>
+
+<section>
+  <h2>যোগাযোগ</h2>
+  <p>📞 মোবাইল: +8801763071247</p>
+  <p>📍 ঠিকানা: Prince Plaza, Madaripur Bazar, Tanore, Rajshahi</p>
+</section>
+
+<footer>
+  &copy; 2025 Moni Mobile Palace. Developed by ChatGPT.
+</footer>
+
+</body>
+</html>
